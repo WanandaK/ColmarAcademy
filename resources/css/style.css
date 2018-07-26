@@ -1,0 +1,177 @@
+/*universal*/
+html {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1281px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  height: 2rem;
+}
+
+.logo-text span {
+  color: grey;
+}
+.navigation.top {
+  padding-right: 1.5rem;
+}
+.navigation span {
+  padding-left: 1rem;
+}
+
+/*BANNER*/
+
+.banner {
+  background-color: #CCC
+}
+
+.main-banner {
+  display: flex;
+  align-items: center;
+}
+
+.img.banner {
+  max-width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.img.banner img {
+  max-width: 100%;
+}
+
+.start.button {
+  max-width: 80%;
+  background-color: grey;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+/*CONTENT*/
+
+.news {
+  display: flex;
+}
+.main-content {
+  max-width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.main-content img {
+  max-width: 100%;
+}
+
+.side-content {
+  max-width: 40%;
+  border-left: 2px solid grey;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sub-content {
+  display: flex;
+  align-items: center;
+}
+
+.sub-content img {
+  max-width: 35%;
+  max-height: auto;
+  margin: 1rem 1rem;
+}
+
+.sub-content .description {
+  max-width: 65%;
+}
+
+.side-content .sub-content:last-child {
+  background-color: #CCC;
+}
+
+
+/*LEARNING COURSE*/
+
+.learning-content {
+  background-color: #ccc;
+}
+
+.learning-content h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.course {
+  max-width: 25%;
+  margin: 2rem 1rem;
+  background-color: white;
+}
+
+.course-desc {
+  margin: 1rem 1rem;
+}
+
+.course-desc span {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+}
+
+/*EXHIBIT*/
+
+.exhibit-content h2 {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.thesis-exhibit {
+  display: flex;
+  max-width: 100%;
+}
+
+.video-content {
+  max-width: 60%;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.side-content-exhibit .sub-content:first-child {
+  background-color: #CCC;
+}
+
+
+/*FOOTER*/
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2px solid #ccc;
+  padding: 1rem 1.5rem;
+}
