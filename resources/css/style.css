@@ -1,8 +1,39 @@
+/*FONTS*/
+
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Yanone Kaffeesatz ExtraLight'), local('YanoneKaffeesatz-ExtraLight'), url(https://fonts.gstatic.com/s/yanonekaffeesatz/v9/3y9-6aknfjLm_3lMKjiMgmUUYBs04YfUPv-qPNM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Yanone Kaffeesatz Light'), local('YanoneKaffeesatz-Light'), url(https://fonts.gstatic.com/s/yanonekaffeesatz/v9/3y9-6aknfjLm_3lMKjiMgmUUYBs04YewPf-qPNM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url(https://fonts.gstatic.com/s/yanonekaffeesatz/v9/3y976aknfjLm_3lMKjiMgmUUYBs04Y8bH-o.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Yanone Kaffeesatz';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Yanone Kaffeesatz Bold'), local('YanoneKaffeesatz-Bold'), url(https://fonts.gstatic.com/s/yanonekaffeesatz/v9/3y9-6aknfjLm_3lMKjiMgmUUYBs04YegOv-qPNM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 /*universal*/
 html {
-  font-family: Helvetica;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 16px;
+  background-color: white;
 }
 
 .container {
@@ -26,20 +57,32 @@ html {
   height: 2rem;
 }
 
+.logo-text div {
+  font-size: 2rem;
+}
 .logo-text span {
   color: grey;
+  font-size: 2rem;
 }
 .navigation.top {
   padding-right: 1.5rem;
 }
 .navigation span {
   padding-left: 1rem;
+  color: #53A6FF;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navigation-mobile {
+  display: none;
 }
 
 /*BANNER*/
 
 .banner {
-  background-color: #CCC
+  background-color: #7CBBFF;
+  font-size: 1.5rem;
 }
 
 .main-banner {
@@ -59,16 +102,33 @@ html {
 
 .start.button {
   max-width: 80%;
-  background-color: grey;
+  background-color: #47A2FF;
   border-radius: 4px;
   text-align: center;
   padding-top: .5rem;
   padding-bottom: .5rem;
+  box-shadow: 2px 4px #29537F;
 }
+
+.start.button:hover {
+  background-color: #4080c5;
+}
+
+.start.button span:hover {
+  font-size: 2rem;
+}
+
+.start.button,
+.start.button span {
+  transition: all 750ms linear 300ms;
+}
+
+
 /*CONTENT*/
 
 .news {
   display: flex;
+  font-size: 1.25rem;
 }
 .main-content {
   max-width: 60%;
@@ -81,7 +141,7 @@ html {
 
 .side-content {
   max-width: 40%;
-  border-left: 2px solid grey;
+  border-left: 2px solid #7CBBFF;
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -89,6 +149,15 @@ html {
 .sub-content {
   display: flex;
   align-items: center;
+  max-width: 100%;
+}
+
+.sub-content:hover {
+  background-color: #A1E7E8;
+}
+
+.sub-content {
+  transition: background-color 500ms linear 100ms;
 }
 
 .sub-content img {
@@ -102,19 +171,26 @@ html {
 }
 
 .side-content .sub-content:last-child {
-  background-color: #CCC;
+  background-color: #A1E7E8;
+}
+
+.side.content-mobile {
+  display: none;
 }
 
 
 /*LEARNING COURSE*/
 
 .learning-content {
-  background-color: #ccc;
+  background-color: #7CBBFF;
+  font-size: 1.25rem;
 }
 
 .learning-content h1 {
   text-align: center;
   padding-top: 2rem;
+  font-size: 3rem;
+  text-shadow: 1.5px 2px #A1E7E8;
 }
 
 .courses {
@@ -144,12 +220,20 @@ html {
   height: auto;
 }
 
+.mobile-view {
+  display: none;
+}
+
 /*EXHIBIT*/
 
 .exhibit-content h2 {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.exhibit-content {
+  font-size: 1.25rem;
 }
 
 .thesis-exhibit {
@@ -163,7 +247,7 @@ html {
 }
 
 .side-content-exhibit .sub-content:first-child {
-  background-color: #CCC;
+  background-color: #A1E7E8;
 }
 
 
@@ -173,6 +257,73 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #A1E7E8;
   padding: 1rem 1.5rem;
+}
+
+/*470px*/
+
+@media only screen and (max-width: 470px) {
+  .logo {
+    display: none;
+  }
+
+  .navigation-mobile  {
+  display: flex;
+  justify-content: space-around;
+  height: 4rem;
+  align-items: center;
+  }
+  .main-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  .img.banner {
+  max-width: 100%;
+  margin: inherit;
+  }
+
+  .tagline {
+  margin: 1rem 1rem;
+  letter-spacing: 2px;
+}
+
+  .start.button {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+  .main-content {
+  display: none;
+}
+
+  .side-content {
+    display: none;
+  }
+
+  .side.content-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+
+  .sub.content-mobile img {
+    max-width: 100%;
+  }
+
+  .sub.content-mobile .description {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .courses,
+  .learning-content {
+    display: none;
+  }
+
+  .mobile-view {
+    display: flex;
+  }
 }
