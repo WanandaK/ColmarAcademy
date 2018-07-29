@@ -181,7 +181,7 @@ html {
 
 /*LEARNING COURSE*/
 
-.learning-content {
+.learning-section {
   background-color: #7CBBFF;
   font-size: 1.25rem;
 }
@@ -191,6 +191,11 @@ html {
   padding-top: 2rem;
   font-size: 3rem;
   text-shadow: 1.5px 2px #A1E7E8;
+}
+
+.learning-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .courses {
@@ -220,6 +225,9 @@ html {
   height: auto;
 }
 
+.mobile {
+  display: none;
+}
 .mobile-view {
   display: none;
 }
@@ -250,6 +258,9 @@ html {
   background-color: #A1E7E8;
 }
 
+.video-mobile {
+  display: none;
+}
 
 /*FOOTER*/
 
@@ -318,12 +329,59 @@ html {
     padding-bottom: 2rem;
   }
 
-  .courses,
   .learning-content {
     display: none;
   }
 
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+  .mobile-head {
+    display: flex;
+    padding-top: 2rem;
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
   .mobile-view {
     display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-view span {
+    padding: 1rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    background-color: #A1E7E8;
+    font-size: 1.5rem;
+    letter-spacing: .5rem;
+  }
+
+  .side-content-exhibit {
+    display: none;
+  }
+
+  .video-content {
+    display: none;
+  }
+
+  .video-mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .footer .terms {
+    display: none;
+  }
+
+  .footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
